@@ -1,0 +1,11 @@
+#!bin/bash
+#Task Print the numbers from 1 to 10 in random order to the terminal.
+# Print the numbers from 1 to 10 in random order to the terminal.
+# A simple bash script can do the task
+# Instructions on how to use the script
+# Open a text editor of your choice
+# Copy the script to the editor and save the file.
+# Grant permissions for the file to run i.e chmod 750 (filename) in case of linux for the script to run
+# ./(filename) to run the script
+#the shuffle command prints numbers 1 to 10 in random order to the terminal.
+shuf -i1-10 
