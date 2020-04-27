@@ -1,0 +1,15 @@
+#Imagine a server with the following specs:
+#4 times Intel(R) Xeon(R) CPU E7-4830 v4 @ 2.00GHz / 64GB of ram
+#2 tb HDD disk space
+#2 x 10Gbit/s nics
+#The server is used for SSL offloading and proxies around 25000 requests per second.
+#Please let us know which metrics are interesting to monitor in that specific case and how would you do that?  
+# What are the challenges of monitoring this?
+
+
+#Solution
+The metrics that would be interesting to monitor in this case are:
+  1. Disk Space ( So that the disk space doesnt run out of memory) Solution ( normally log files fill up the space good to have log rotation in place.
+  2. Cpu Usage ( Since it handles 25000 requests/sec a huge influx of requests might burden the resources so good to have that monitored). Depending on which process burdens the server a remediation can be done .
+  3. Traffic Flow ( The amount of traffic that is recieved ) if traffic recieved is more than expected and burdens the server better to have a load balancer in place,
+ 
